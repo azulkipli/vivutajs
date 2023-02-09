@@ -1,16 +1,32 @@
-import { createApp } from "vue";
-import { createPinia } from "pinia";
-import { createRouter, createWebHistory } from "vue-router";
-import App from "./App.vue";
-import routes from "~pages";
+import { createApp } from "vue"
+import { createPinia } from "pinia"
+import { createRouter, createWebHistory } from "vue-router"
+import { createHead, useHead } from "unhead"
 
-import "./assets/tailwind.css";
+import App from "./App.vue"
+import routes from "~pages"
 
-const app = createApp(App);
+import "./assets/tailwind.css"
+const head = createHead()
+const app = createApp(App)
+
 const router = createRouter({
   history: createWebHistory(),
   routes,
-});
-app.use(createPinia());
-app.use(router);
-app.mount("#app");
+})
+
+useHead({
+  title: "ViVuTaJS",
+  meta: [
+    {
+      name: "description",
+      content: "Vite VueJS TailwindCSS JavaScript starter template",
+      keywords: "vite, vue, tailwind, starter, template",
+    },
+  ],
+})
+
+app.use(createPinia())
+app.use(router)
+app.use(head)
+app.mount("#app")
