@@ -10,12 +10,14 @@ specifiers:
   eslint: ^8.22.0
   eslint-plugin-cypress: ^2.12.1
   eslint-plugin-vue: ^9.3.0
+  husky: ^8.0.3
   jsdom: ^20.0.3
   pinia: ^2.0.28
   postcss: ^8.4.21
   prettier: ^2.7.1
   start-server-and-test: ^1.15.2
   tailwindcss: ^3.2.4
+  unhead: ^1.0.21
   unplugin-auto-import: ^0.13.0
   unplugin-vue-inspector: ^0.2.1
   vite: ^4.0.0
@@ -29,6 +31,7 @@ specifiers:
 
 dependencies:
   pinia: 2.0.30_vue@3.2.47
+  unhead: 1.0.21
   vue: 3.2.47
   vue-router: 4.1.6_vue@3.2.47
 
@@ -42,6 +45,7 @@ devDependencies:
   eslint: 8.33.0
   eslint-plugin-cypress: 2.12.1_eslint@8.33.0
   eslint-plugin-vue: 9.9.0_eslint@8.33.0
+  husky: 8.0.3
   jsdom: 20.0.3
   postcss: 8.4.21
   prettier: 2.8.3
@@ -837,6 +841,19 @@ packages:
     dev: true
     optional: true
 
+  /@unhead/dom/1.0.21:
+    resolution: {integrity: sha512-rwVz7NWMdQ8kSTXv/WOhB0eTWYFD2SQwQ/J109IEqNUN9X3pIwcvdvlXMCG+qhJGFyiIgOl2X+W0cE+u/IiLVA==}
+    dependencies:
+      '@unhead/schema': 1.0.21
+    dev: false
+
+  /@unhead/schema/1.0.21:
+    resolution: {integrity: sha512-amYg6vJ37xUhnL6bvL4S3lz6yDs5lWeqJu63/3a5bxH3Dq0WPJ+kdhpUXI+4enoNaWvLvm860WXUOtKr5D+DMg==}
+    dependencies:
+      '@zhead/schema': 1.1.0
+      hookable: 5.4.2
+    dev: false
+
   /@vitejs/plugin-vue/4.0.0_vite@4.1.1+vue@3.2.47:
     resolution: {integrity: sha512-e0X4jErIxAB5oLtDqbHvHpJe/uWNkdpYV83AOG2xo2tEVSzCzewgJMtREZM30wXnM5ls90hxiOtAuVU6H5JgbA==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -967,6 +984,10 @@ packages:
     optionalDependencies:
       '@vue/compiler-dom': 3.2.47
     dev: true
+
+  /@zhead/schema/1.1.0:
+    resolution: {integrity: sha512-hEtK+hUAKS3w1+F++m6EeZ6bWeLDXraqN2nCyRVIP5vvR3bWjXVP9OM9x7Pmn7Hp6T7FKmsG2C8rvouQU2806w==}
+    dev: false
 
   /abab/2.0.6:
     resolution: {integrity: sha512-j2afSsaIENvHZN2B8GOpF566vZ5WVk5opAiMTvWgaQT8DkbOqsTfvNAvHoRGU2zzP8cPoqys+xHTRDWW8L+/BA==}
@@ -2574,6 +2595,10 @@ packages:
       function-bind: 1.1.1
     dev: true
 
+  /hookable/5.4.2:
+    resolution: {integrity: sha512-6rOvaUiNKy9lET1X0ECnyZ5O5kSV0PJbtA5yZUgdEF7fGJEVwSLSislltyt7nFwVVALYHQJtfGeAR2Y0A0uJkg==}
+    dev: false
+
   /html-encoding-sniffer/3.0.0:
     resolution: {integrity: sha512-oWv4T4yJ52iKrufjnyZPkrN0CH3QnrUqdB6In1g5Fe1mia8GmF36gnfNySxoZtxD5+NmYw1EElVXiBk93UeskA==}
     engines: {node: '>=12'}
@@ -2624,6 +2649,12 @@ packages:
   /human-signals/2.1.0:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
     engines: {node: '>=10.17.0'}
+    dev: true
+
+  /husky/8.0.3:
+    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
+    engines: {node: '>=14'}
+    hasBin: true
     dev: true
 
   /iconv-lite/0.6.3:
@@ -4085,6 +4116,14 @@ packages:
   /ufo/1.0.1:
     resolution: {integrity: sha512-boAm74ubXHY7KJQZLlXrtMz52qFvpsbOxDcZOnw/Wf+LS4Mmyu7JxmzD4tDLtUQtmZECypJ0FrCz4QIe6dvKRA==}
     dev: true
+
+  /unhead/1.0.21:
+    resolution: {integrity: sha512-vHXnozOkoSkCYIpGTWkW4JJbWMlY2I737sbBGxPj6maa9gEDMC50gwhCCVMnIvvMsJ6OxgNE5asEfSkSopfO+A==}
+    dependencies:
+      '@unhead/dom': 1.0.21
+      '@unhead/schema': 1.0.21
+      hookable: 5.4.2
+    dev: false
 
   /unimport/2.2.4:
     resolution: {integrity: sha512-qMgmeEGqqrrmEtm0dqxMG37J6xBtrriqxq9hILvDb+e6l2F0yTnJomLoCCp0eghLR7bYGeBsUU5Y0oyiUYhViw==}

@@ -9,10 +9,12 @@
     "test:unit": "vitest --environment jsdom --root src/",
     "test:e2e": "start-server-and-test preview :4173 'cypress run --e2e'",
     "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' :4173 'cypress open --e2e'",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "prepare": "husky install"
   },
   "dependencies": {
     "pinia": "^2.0.28",
+    "unhead": "^1.0.21",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
@@ -26,6 +28,7 @@
     "eslint": "^8.22.0",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-vue": "^9.3.0",
+    "husky": "^8.0.3",
     "jsdom": "^20.0.3",
     "postcss": "^8.4.21",
     "prettier": "^2.7.1",
