@@ -20,6 +20,7 @@ specifiers:
   unplugin-vue-inspector: ^0.2.1
   vite: ^4.0.0
   vite-plugin-pages: ^0.28.0
+  vite-plugin-time-reporter: ^2.1.0
   vite-plugin-vue-inspector: ^3.3.1
   vite-plugin-vue-layouts: ^0.7.0
   vitest: ^0.25.6
@@ -50,6 +51,7 @@ devDependencies:
   unplugin-vue-inspector: 0.2.1_vite@4.1.1
   vite: 4.1.1
   vite-plugin-pages: 0.28.0_vite@4.1.1
+  vite-plugin-time-reporter: 2.1.0_vite@4.1.1
   vite-plugin-vue-inspector: 3.3.1_vite@4.1.1
   vite-plugin-vue-layouts: 0.7.0_fmudivyuqogzrsdw3ssoqrxof4
   vitest: 0.25.8_jsdom@20.0.3
@@ -4219,6 +4221,14 @@ packages:
       yaml: 2.2.1
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /vite-plugin-time-reporter/2.1.0_vite@4.1.1:
+    resolution: {integrity: sha512-amt4hvwvqQkRfUShbLwURUoT+qNX7FLmAdSnCeTdSt4J2miklvc1JpBOQsl/au6k58bFGtQ5I4AY2D8uF2pvTw==}
+    peerDependencies:
+      vite: ^2.0.0 || ^3.0.0 || ^4.0.0
+    dependencies:
+      vite: 4.1.1
     dev: true
 
   /vite-plugin-vue-inspector/3.3.1_vite@4.1.1:
