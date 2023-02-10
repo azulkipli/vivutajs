@@ -1,10 +1,10 @@
 <template>
   <section class="container">
-    <h1>Home Page</h1>
+    <h1>About Page</h1>
   </section>
 </template>
 <route lang="yaml">
 meta:
-  layout: fluid
-  bgColor: "#e1e1e1"
+  layout: fixed
+  bgColor: "#a5a5a5"
 </route>

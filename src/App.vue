@@ -1,16 +1,14 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router"
+import { /* RouterLink, */ RouterView } from "vue-router"
 </script>
 
 <template>
-  <header>
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-    </nav>
-  </header>
-
   <main>
-    <RouterView />
+    <RouterView class="mt-5 p-5 w-[500px] mx-auto border" />
   </main>
 </template>
+<style>
+.router-link-exact-active {
+  @apply underline;
+}
+</style>

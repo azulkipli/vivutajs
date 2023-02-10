@@ -2,9 +2,13 @@ import { createApp } from "vue"
 import { createPinia } from "pinia"
 import { createRouter, createWebHistory } from "vue-router"
 import { createHead, useHead } from "unhead"
+import { setupLayouts } from "virtual:generated-layouts"
+import generatedRoutes from "virtual:generated-pages"
+
+const routes = setupLayouts(generatedRoutes)
 
 import App from "./App.vue"
-import routes from "~pages"
+// import routes from "~pages"
 
 import "./assets/tailwind.css"
 const head = createHead()
