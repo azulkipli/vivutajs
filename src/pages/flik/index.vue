@@ -8,7 +8,7 @@ export default {
 </script>
 <template>
   <section class="w-100 lg:w-[500px] md:w-[500px] p-5 mx-auto h-screen">
-    <div class="border rounded-xl py-3 my-3">
+    <div class="border rounded-xl py-2 mb-5">
       <h2 class="text-center text-fs-15">Hello, <span class="font-semibold">Shopper</span></h2>
     </div>
     <div class="max-w-screen-xl px-2 mx-auto">

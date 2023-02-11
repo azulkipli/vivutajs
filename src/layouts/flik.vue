@@ -8,28 +8,9 @@
           </button>
         </div>
 
-        <div class="flex items-center gap-4">center</div>
+        <div class="flex items-center gap-4"></div>
 
         <div class="flex items-center gap-4">
-          <!--             
-          <div class="sm:flex sm:gap-4">
-            <a
-              class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
-              href="/"
-            >
-              Login
-            </a>
-
-            <div class="hidden sm:flex">
-              <a
-                class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600"
-                href="/"
-              >
-                Register
-              </a>
-            </div>
-          </div>
-            -->
           <div class="block">
             <button class="block transition">
               <i-mdi:cart class="inline" /> <span class="cart-total">Rp120.500</span>
