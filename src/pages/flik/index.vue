@@ -218,7 +218,7 @@ export default {
 </template>
 <route lang="yaml">
 meta:
-  layout: flik
+  layout: useflik
 </route>
 <style>
 p {
