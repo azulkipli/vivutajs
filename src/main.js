@@ -7,6 +7,8 @@ import generatedRoutes from "virtual:generated-pages"
 
 const routes = setupLayouts(generatedRoutes)
 
+console.log("VITE_APP_TITLE : ", import.meta.env.VITE_APP_TITLE)
+
 import App from "./App.vue"
 // import routes from "~pages"
 
