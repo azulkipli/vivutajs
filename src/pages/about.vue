@@ -1,10 +1,5 @@
 <script>
-import { /* RouterLink, */ RouterView } from "vue-router"
-
 export default {
-  defineComponent: {
-    RouterView,
-  },
   setup() {},
   mounted() {
     console.log(`Page About is now mounted.`)

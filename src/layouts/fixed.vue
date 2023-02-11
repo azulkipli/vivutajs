@@ -5,12 +5,12 @@ import { useRouter } from "vue-router"
   <header>
     <TopNavigation />
   </header>
-  <main
+  <section
     class="mt-2 p-7 fix500w"
     :style="`background: ${useRouter().currentRoute.value.meta.bgColor};`"
   >
     <RouterView />
-  </main>
+  </section>
 </template>
 <style scoped>
 .fix500 {

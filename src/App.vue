@@ -13,9 +13,9 @@ export default {
 </script>
 
 <template>
-  <main>
-    <RouterView class="mt-5 p-5 w-[500px] mx-auto border" />
-  </main>
+  <section>
+    <RouterView class="mt-5 p-5 w-[500px] mx-auto" />
+  </section>
 </template>
 <style>
 .router-link-exact-active {

@@ -2,7 +2,21 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        "fs-15": "15px",
+      },
+      colors: {
+        flik: {
+          primary: "#1f1f54",
+          dark: "#10102B",
+          orange: "#f75541",
+          "secondary-blue": "#0865c5",
+          "gray-ef": "#EFEFEF",
+          "green-discount": "#0f971d",
+        },
+      },
+    },
   },
-  plugins: [],
-};
+  plugins: [require("@tailwindcss/forms")],
+}
