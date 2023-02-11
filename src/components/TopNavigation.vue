@@ -3,6 +3,6 @@
     <RouterLink to="/" class="px-2 py-4 text-sm">Home</RouterLink>
     <RouterLink to="/about" class="px-2 py-4 text-sm">About</RouterLink>
     <RouterLink to="/sample" class="px-2 py-4 text-sm">Sample</RouterLink>
-    <RouterLink to="/hyperui/navigation" class="px-2 py-4 text-sm">Navigation</RouterLink>
+    <RouterLink to="/flik" class="px-2 py-4 text-sm">Flik</RouterLink>
   </nav>
 </template>
