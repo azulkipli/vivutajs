@@ -39,6 +39,9 @@ export default defineConfig(({ mode }) => ({
     Pages(),
     Layouts(),
     Components({
+      dirs: ["src/components"],
+      deep: true,
+      directoryAsNamespace: true,
       resolvers: [IconsResolver()],
     }),
     Icons({

@@ -3,10 +3,7 @@ import { useRouter } from "vue-router"
 </script>
 <template>
   <header>
-    <nav class="mt-1 p-2 px-5 w-100 lg:w-[500px] xl:w-[500px] mx-auto">
-      <RouterLink to="/" class="px-2 py-4 text-sm">Home</RouterLink>
-      <RouterLink to="/about" class="px-2 py-4 text-sm">About</RouterLink>
-    </nav>
+    <TopNavigation />
   </header>
   <main class="mt-2 p-7" :style="`background: ${useRouter().currentRoute.value.meta.bgColor};`">
     <RouterView />

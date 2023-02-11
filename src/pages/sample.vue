@@ -7,20 +7,19 @@ export default {
   },
   setup() {},
   mounted() {
-    console.log(`Page About is now mounted.`)
-    console.info("This is INFO example")
-    console.warn("This is WARNING example")
-    console.error("This is ERROR example")
+    console.log(`Page Sample Icons is now mounted.`)
   },
 }
 </script>
 <template>
   <section class="container">
-    <h1>About Page</h1>
+    <h1>Sample Icons</h1>
+    <i-carbon-accessibility />
+    <i-mdi-account-box style="font-size: 2em; color: red" />
   </section>
 </template>
 <route lang="yaml">
 meta:
-  layout: fixed
-  bgColor: "#a5a5a5"
+  layout: fluid
+  bgColor: "#e1e1e1"
 </route>
