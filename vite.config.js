@@ -36,9 +36,7 @@ export default defineConfig(({ mode }) => ({
     //   },
     // }),
     Inspector(),
-    Pages({
-      routeStyle: "nuxt",
-    }),
+    Pages(),
     Layouts(),
     Components({
       dirs: ["src/components"],
