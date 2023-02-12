@@ -1,5 +1,5 @@
-import { fileURLToPath, URL } from "node:url"
-
+// import { fileURLToPath, URL } from "node:url"
+import path from "path"
 import { defineConfig } from "vite"
 import vue from "@vitejs/plugin-vue"
 import Pages from "vite-plugin-pages"
@@ -23,6 +23,16 @@ export default defineConfig(({ mode }) => ({
   esbuild: {
     pure: mode === "production" ? ["console.log", "console.info", "debug"] : [],
   },
+  resolve: {
+    alias: {
+      "~/": `${path.resolve(__dirname, "src")}/`,
+    },
+  },
+  // resolve: {
+  //   alias: {
+  //     "@": fileURLToPath(new URL("./src", import.meta.url)),
+  //   },
+  // },
   plugins: [
     vue(),
     // AutoImport({
@@ -50,9 +60,4 @@ export default defineConfig(({ mode }) => ({
     }),
     timeReporter(),
   ],
-  resolve: {
-    alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
-    },
-  },
 }))

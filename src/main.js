@@ -1,6 +1,6 @@
 import { createApp } from "vue"
 import { createPinia } from "pinia"
-import { createRouter, createWebHistory } from "vue-router"
+import { createRouter, createWebHashHistory /* createWebHistory */ } from "vue-router"
 import { createHead, useHead } from "unhead"
 import { setupLayouts } from "virtual:generated-layouts"
 import generatedRoutes from "virtual:generated-pages"
@@ -17,7 +17,8 @@ const head = createHead()
 const app = createApp(App)
 
 const router = createRouter({
-  history: createWebHistory(),
+  // history: createWebHistory(),
+  history: createWebHashHistory(),
   routes,
 })
 

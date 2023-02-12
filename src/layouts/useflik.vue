@@ -1,5 +1,6 @@
 <template>
   <header aria-label="Site Header" class="w-100 lg:w-[500px] md:w-[500px] mx-auto">
+    <TopNavigation />
     <div class="mx-auto max-w-screen-xl px-5">
       <div class="flex h-16 items-center justify-between">
         <div class="md:flex md:items-center md:gap-12">
