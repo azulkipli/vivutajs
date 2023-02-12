@@ -4,6 +4,8 @@ import { createRouter, createWebHistory } from "vue-router"
 import { createHead, useHead } from "unhead"
 import { setupLayouts } from "virtual:generated-layouts"
 import generatedRoutes from "virtual:generated-pages"
+import VueTelInput from "vue3-tel-input"
+import "vue3-tel-input/dist/vue3-tel-input.css"
 
 const routes = setupLayouts(generatedRoutes)
 
@@ -31,6 +33,13 @@ useHead({
     },
   ],
 })
+
+const VueTelInputOptions = {
+  mode: "international",
+  onlyCountries: ["ID", "MY", "SG", "PH", "BN"],
+}
+
+app.use(VueTelInput, VueTelInputOptions)
 
 app.use(createPinia())
 app.use(router)
