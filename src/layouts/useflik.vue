@@ -3,7 +3,7 @@
     <div class="mx-auto max-w-screen-xl px-5">
       <div class="flex h-16 items-center justify-between">
         <div class="md:flex md:items-center md:gap-12">
-          <button>
+          <button id="btn-logo" aria-label="btn-logo">
             <IconsFlikHorizon />
           </button>
         </div>
