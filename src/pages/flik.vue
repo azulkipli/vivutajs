@@ -2,7 +2,7 @@
 export default {
   setup() {},
   mounted() {
-    console.log(`Page Navigation is now mounted.`)
+    console.log(`Page Flik is now mounted.`)
   },
 }
 </script>

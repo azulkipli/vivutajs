@@ -2,17 +2,27 @@
 export default {
   setup() {},
   mounted() {
-    console.log(`Page Home is now mounted.`)
+    console.log(`Page Flik is now mounted.`)
   },
 }
 </script>
 <template>
-  <section class="container">
-    <h1>Home Page</h1>
+  <section class="w-100 lg:w-[500px] md:w-[500px] p-5 mx-auto h-screen">
+    <div class="py-2 mb-5">
+      <h2 class="text-center text-fs-15">Login</h2>
+    </div>
+    <div class="max-w-screen-xl px-2 mx-auto">Form Phone number</div>
   </section>
 </template>
 <route lang="yaml">
 meta:
-  layout: fluid
-  bgColor: "#e1e1e1"
+  layout: useflik
 </route>
+<style>
+p {
+  @apply p-3;
+}
+.cart-total {
+  @apply text-gray-800 font-semibold text-sm;
+}
+</style>
