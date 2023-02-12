@@ -108,6 +108,7 @@ p {
 }
 .vti__dropdown-list {
   border: solid 1px #e5e5e5;
+  font-size: 13px;
   left: 1px;
 }
 /* override vue-phone-number-input  */

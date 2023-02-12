@@ -36,6 +36,24 @@ useHead({
 
 const VueTelInputOptions = {
   mode: "international",
+  defaultCountry: "ID",
+  autoDefaultCountry: false,
+  validCharactersOnly: true,
+  disabledFetchingCountry: true,
+  dropdownOptions: {
+    showSearchBox: true,
+    showFlags: true,
+    width: "300px",
+  },
+  inputOptions: {
+    autofocus: true,
+    showDialCode: false,
+    required: true,
+    maxlength: 18,
+    "aria-describedby": "phone",
+    placeholder: "Enter a phone number",
+    invalidMsg: "Phone number invalid",
+  },
   onlyCountries: ["ID", "MY", "SG", "PH", "BN"],
 }
 
