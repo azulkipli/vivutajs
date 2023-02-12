@@ -24,3 +24,11 @@
     <RouterView />
   </section>
 </template>
+<style scoped>
+p {
+  @apply p-3;
+}
+.cart-total {
+  @apply text-gray-800 font-semibold text-sm;
+}
+</style>

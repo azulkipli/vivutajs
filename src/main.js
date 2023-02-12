@@ -4,8 +4,8 @@ import { createRouter, createWebHistory } from "vue-router"
 import { createHead, useHead } from "unhead"
 import { setupLayouts } from "virtual:generated-layouts"
 import generatedRoutes from "virtual:generated-pages"
-import VueTelInput from "vue3-tel-input"
-import "vue3-tel-input/dist/vue3-tel-input.css"
+// import VueTelInput from "vue3-tel-input"
+// import "vue3-tel-input/dist/vue3-tel-input.css"
 
 const routes = setupLayouts(generatedRoutes)
 
@@ -34,30 +34,30 @@ useHead({
   ],
 })
 
-const VueTelInputOptions = {
-  mode: "international",
-  defaultCountry: "ID",
-  autoDefaultCountry: false,
-  validCharactersOnly: true,
-  disabledFetchingCountry: true,
-  dropdownOptions: {
-    showSearchBox: true,
-    showFlags: true,
-    width: "300px",
-  },
-  inputOptions: {
-    autofocus: true,
-    showDialCode: false,
-    required: true,
-    maxlength: 18,
-    "aria-describedby": "phone",
-    placeholder: "Enter a phone number",
-    invalidMsg: "Phone number invalid",
-  },
-  onlyCountries: ["ID", "MY", "SG", "PH", "BN"],
-}
+// const VueTelInputOptions = {
+//   mode: "international",
+//   defaultCountry: "ID",
+//   autoDefaultCountry: false,
+//   validCharactersOnly: true,
+//   disabledFetchingCountry: true,
+//   dropdownOptions: {
+//     showSearchBox: true,
+//     showFlags: true,
+//     width: "300px",
+//   },
+//   inputOptions: {
+//     autofocus: true,
+//     showDialCode: false,
+//     required: true,
+//     maxlength: 18,
+//     "aria-describedby": "phone",
+//     placeholder: "Enter a phone number",
+//     invalidMsg: "Phone number invalid",
+//   },
+//   onlyCountries: ["ID", "MY", "SG", "PH", "BN"],
+// }
 
-app.use(VueTelInput, VueTelInputOptions)
+// app.use(VueTelInput, VueTelInputOptions)
 
 app.use(createPinia())
 app.use(router)
