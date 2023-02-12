@@ -23,7 +23,7 @@ export default {
         <vue-tel-input
           v-model="phone"
           mode="international"
-          class="border-gray-400 rounded-lg"
+          class="border-gray-400 rounded-lg text-sm"
         ></vue-tel-input>
       </form>
     </div>
@@ -81,6 +81,7 @@ p {
   border-radius: 0 6px 6px 0 !important;
   outline: none !important;
   padding: 10px !important;
+  font-size: 14.5px !important;
   --tw-ring-shadow: 0 0 #000 !important;
   --tw-ring-color: white !important;
 }
@@ -107,9 +108,10 @@ p {
   margin: 0 !important;
 }
 .vti__dropdown-list {
-  border: solid 1px #e5e5e5;
+  @apply rounded-b-md;
+  border: 1px solid #eee !important;
   font-size: 13px;
-  left: 1px;
+  left: 0.5px !important;
 }
 /* override vue-phone-number-input  */
 </style>
