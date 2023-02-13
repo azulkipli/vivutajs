@@ -23,11 +23,16 @@ export default {
   mounted() {
     console.log(`Page Flik is now mounted.`)
   },
+  methods: {
+    onSubmit(e) {
+      e.preventDefault()
+    },
+  },
 }
 </script>
 
 <template>
-  <form>
+  <form class="block text-center" @submit="onSubmit">
     <vue-tel-input
       v-model="phone"
       :mode="international"
@@ -39,8 +44,10 @@ export default {
       placeholder="Enter a phone number"
       invalid-msg="Phone number invalid"
       :only-countries="onlyCountries"
-      class="border-gray-400 rounded-lg text-sm"
+      class="border-gray-400 rounded-md text-sm"
     ></vue-tel-input>
+    <button class="bg-flik-primary mx-auto mt-5 p-2 w-2/3 text-white rounded-md">Continue</button>
+    <div class="text-gray-500 text-[13px] mt-1">We'll send you a verification code via SMS</div>
   </form>
 </template>
 

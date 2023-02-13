@@ -16,6 +16,7 @@ import browserslistToEsbuild from "browserslist-to-esbuild"
 export default defineConfig(({ mode }) => ({
   server: {
     port: 5151,
+    hmr: { overlay: true },
   },
   preview: {
     port: 6161,
