@@ -40,13 +40,16 @@ export default defineConfig(({ mode }) => ({
     //   },
     // }),
     Inspector(),
-    Pages(),
+    Pages({
+      routeStyle: "nuxt",
+    }),
     Layouts(),
     Components({
       dirs: ["src/components"],
       deep: true,
       directoryAsNamespace: true,
       resolvers: [IconsResolver()],
+      exclude: ["src/lazycomponents"],
     }),
     Icons({
       // experimental

@@ -12,6 +12,12 @@ export default {
 
     return {
       phone,
+      dropdownOptions: {
+        showSearchBox: true,
+        showFlags: true,
+        width: "300px",
+      },
+      onlyCountries: ["ID", "SG", "MY", "PH", "BN"],
     }
   },
   mounted() {
@@ -29,9 +35,10 @@ export default {
       :auto-default-country="false"
       :valid-characters-only="true"
       :disabled-fetching-country="true"
+      :dropdown-options="dropdownOptions"
       placeholder="Enter a phone number"
       invalid-msg="Phone number invalid"
-      :only-countries="['ID', 'SG', 'MY', 'PH', 'BN']"
+      :only-countries="onlyCountries"
       class="border-gray-400 rounded-lg text-sm"
     ></vue-tel-input>
   </form>

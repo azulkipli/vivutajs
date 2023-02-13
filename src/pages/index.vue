@@ -1,5 +1,9 @@
 <script>
+import { defineAsyncComponent } from "vue"
 export default {
+  components: {
+    FormPhone: defineAsyncComponent(() => import("../lazycomponents/FormPhone.vue")),
+  },
   setup() {},
   mounted() {
     console.log(`Page Flik is now mounted.`)
