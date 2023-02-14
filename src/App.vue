@@ -17,8 +17,3 @@ export default {
     <RouterView class="mt-5 p-5 w-[500px] mx-auto" />
   </section>
 </template>
-<style>
-.router-link-exact-active {
-  @apply underline;
-}
-</style>

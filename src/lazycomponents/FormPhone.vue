@@ -1,7 +1,8 @@
 <script>
 import { ref } from "vue"
-import "vue3-tel-input/dist/vue3-tel-input.css"
+// import "vue3-tel-input/dist/vue3-tel-input.css"
 import { VueTelInput } from "vue3-tel-input"
+import "../assets/vue-tel-input.css"
 
 export default {
   components: {

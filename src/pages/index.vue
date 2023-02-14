@@ -29,9 +29,6 @@ meta:
 </route>
 
 <style>
-p {
-  @apply p-3;
-}
 .flikpage {
   @apply lg:w-[500px] md:w-[500px] py-2 px-5 mx-auto h-screen border-gray-100;
 }

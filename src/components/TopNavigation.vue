@@ -6,3 +6,8 @@
     <RouterLink to="/demo" class="px-2 py-4 text-sm">Demo</RouterLink>
   </nav>
 </template>
+<style scoped>
+.router-link-exact-active {
+  @apply underline;
+}
+</style>
